@@ -8,8 +8,8 @@ namespace Demo2.气象站
 {
 	public interface ISubject
 	{
-		void registerObserver();
-		void removeObserver();
-		void notifyObserver();
+		void registerObserver(IObserver o);
+		void removeObserver(IObserver o);
+		void notifyObserver(IObserver o);
 	}
 }
