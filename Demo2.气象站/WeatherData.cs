@@ -8,28 +8,42 @@ namespace Demo2.气象站
 {
 	public class WeatherData : ISubject
 	{
-		List<> array;
-		public long tenperature { get; set; }
+		List<IObserver> observerList;
+		public long temperature { get; set; }
 		public long humidity { get; set; }
 		public long pressure { get; set; }
 
 		public WeatherData() {
-			array=new Array
+			observerList = new List<IObserver>();
 		}
 
-		public void notifyObserver(IObserver o)
+		public void notifyObserver()
 		{
-			throw new NotImplementedException();
+			foreach (var o in observerList)
+			{
+				o.update(temperature, humidity, pressure);
+			}
 		}
 
 		public void registerObserver(IObserver o)
 		{
-			throw new NotImplementedException();
+			observerList.Add(o);
 		}
 
 		public void removeObserver(IObserver o)
 		{
-			throw new NotImplementedException();
+			observerList.Remove(o);
+		}
+
+		public void mesurmentChange() {
+			notifyObserver();
+		}
+
+		public void setMesurment(long temperature, long humidity, long pressure) {
+			this.temperature = temperature;
+			this.humidity = humidity;
+			this.pressure = pressure;
+			mesurmentChange();
 		}
 	}
 }

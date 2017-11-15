@@ -10,6 +10,6 @@ namespace Demo2.气象站
 	{
 		void registerObserver(IObserver o);
 		void removeObserver(IObserver o);
-		void notifyObserver(IObserver o);
+		void notifyObserver();
 	}
 }

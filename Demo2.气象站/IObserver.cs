@@ -8,6 +8,6 @@ namespace Demo2.气象站
 {
 	public interface IObserver
 	{
-		void update();
+		void update(long temperature,long humidity,long pressure);
 	}
 }
