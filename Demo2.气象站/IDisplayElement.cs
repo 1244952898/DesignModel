@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Demo2.气象站
 {
-	public interface IDisplayElement
-	{
-		void disply();
-	}
+public interface IDisplayElement
+{
+	void disply();
+}
 }

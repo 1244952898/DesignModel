@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo2.气象站
+namespace Demo2.报纸订阅
 {
 public interface ISubject
 {
-	void registerObserver(IObserver o);
-	void removeObserver(IObserver o);
-	void notifyObserver();
+	void RegisterEvent(IObserver o);
+	void RemoveEvent(IObserver o);
+	void NoticeEvent();
 }
 }

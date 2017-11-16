@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1B9D2C62-A880-4E1C-BB36-C9976FB2D0C6}</ProjectGuid>
+    <ProjectGuid>{F7BF8862-4D7C-4D49-87B3-5FBAA5735F66}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Demo2.气象站2</RootNamespace>
-    <AssemblyName>Demo2.气象站2</AssemblyName>
+    <RootNamespace>Demo2.报纸订阅</RootNamespace>
+    <AssemblyName>Demo2.报纸订阅</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,15 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="CurrentConditionDisply.cs" />
-    <Compile Include="IDisplayElement.cs" />
     <Compile Include="IObserver.cs" />
     <Compile Include="ISubject.cs" />
-    <Compile Include="Observable.cs" />
+    <Compile Include="NewPaperData.cs" />
+    <Compile Include="PaperReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WeatherData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
