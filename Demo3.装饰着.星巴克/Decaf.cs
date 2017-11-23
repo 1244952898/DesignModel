@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Demo3.装饰着.星巴克
 {
-	public class Decaf : Beverage
+public class Decaf : Beverage
+{
+	public Decaf()
 	{
-		public Decaf()
-		{
-			description = "Decaf";
-		}
-		public override double Cost()
-		{
-			return 40;
-		}
+		description = "Decaf";
 	}
+	public override double Cost()
+	{
+		return 40;
+	}
+}
 }

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Demo3.装饰着.星巴克
 {
-	public abstract class Beverage
-	{
-		public string description="just beverage without any thing";
+public abstract class Beverage
+{
+	public string description="just beverage without any thing";
 
-		public virtual string GetDescription() {
-			return description;
-		}
-
-		public abstract double Cost();
+	public virtual string GetDescription() {
+		return description;
 	}
+
+	public abstract double Cost();
+}
 }
